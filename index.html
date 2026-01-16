@@ -5,66 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-    <header>
+<body class="open-sans-normal">
+    <header class="header-bg">
         <nav>
-            <h1>Web Developer Portfolio</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <h3 class="nav-title">Sh<span class="primary-color">o</span>fiq</h3>
+            <ul class="nav-links">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a class="dark-2" href="#blog">Blog</a></li>
+                <li><a href="#hire_me"><button class="button-primary">Hire Me</button></a></li>
             </ul>
         </nav>
+        <section class="hero-section">
+            <div class="banner-content">
+                <h4 class="banner-greeting dark-2">Hi, I am</h4>
+                <h1 class="banner-title dark-1">Mary Hardy</h1>
+                <p class="banner-paragraph dark-3">A passionate web developer with expertise in HTML, CSS, and
+                    JavaScript. I love creating responsive
+                    and user-friendly websites.</p>
+                <button class="button-primary">Download Resume</button>
+                <button class="button-secondary">Contact Me</button>
+            </div>
+            <div class="">
+                <img class="banner-profile-image" src="images/hardy.png" alt="">
+            </div>
+        </section>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating responsive and user-friendly websites.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1: Personal Blog</h3>
-                <p>A responsive blog website built with HTML and CSS featuring multiple articles and categories.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2: E-commerce Site</h3>
-                <p>A functional e-commerce platform with product listings, shopping cart, and checkout functionality.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3: Task Manager App</h3>
-                <p>An interactive task management application built with vanilla JavaScript and local storage.</p>
+    <main class="main-section">
+        <section class="about-section">
+            <div class="about">
+                <div>
+                    <h4>About Me</h4>
+                    <p>I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and
+                        slick websites that provide real value to the end user. Thousands of clients have procured
+                        exceptional resulfs while working with me. Delivering work within time and budget which meets
+                        clients requirements in our mata.</p>
+                </div>
+                <div class="contact-info">
+                    <p>Name: <br>Mary Hardy</p>
+                    <p>Email: <br>hossainshofiq95@gmail.com</p>
+                    <p>Date of Birth: <br>1995-06-15</p>
+                    <p>Location: <br>Dhaka, Bangladesh</p>
+                </div>
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Responsive Web Design</li>
-                <li>Git & GitHub</li>
-                <li>Web Accessibility</li>
-            </ul>
+        <section class="what-i-do-section">
+            <h4>What I do</h4>
+            <p>I have more than 10 years experience building software for clients all over the world. Below is a quick
+                overview of my main technical skill sets and technologies i use. Want to find out more about my
+                experience? Check out my online resume and project portfolio.</p>
+
+            <div class="cards-container">
+                <div class="cards-shadow">
+                    <img src="images/icons/js.png" alt="">
+                    <h5>Vanilla JavaScript</h5>
+                    <p>Developing interactive web applications using vanilla JavaScript.</p>
+                </div>
+                <div class="cards-shadow">
+                    <img src="images/icons/react.png" alt="">
+                    <h5>React</h5>
+                    <p>Building modern user interfaces with React and its ecosystem.</p>
+                </div>
+                <div class="cards-shadow">
+                    <img src="images/icons/nodejs.png" alt="">
+                    <h5>Node.js</h5>
+                    <p>Developing server-side applications using Node.js and Express.</p>
+                </div>
+                <div class="cards-shadow">
+                    <img src="images/icons/mongo.png" alt="">
+                    <h5>MongoDB</h5>
+                    <p>Developing database solutions using MongoDB and its ecosystem.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out for collaborations or inquiries:</p>
-            <ul>
-                <li>Email: <a href="mailto:hello@example.com">hello@example.com</a></li>
-                <li>GitHub: <a href="https://github.com" target="_blank">github.com/yourprofile</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/yourprofile</a></li>
-            </ul>
+        <section class="resume-section">
+            <h4>A summary of My Resume</h4>
+            <div class="resume-section-card">
+                <div>
+                    <h4>My Eudcation</h4>
+                    <h5>Master in Computer Engineering</h5>
+                    <h6>University of Dhaka / 2015 - 2017</h6>
+                    <p>Specialized in software development, algorithms, and data structures. Graduated with honors.</p>
+                </div>
+                <div>
+                    <h4>My Experience</h4>
+                    <h5>Sr. Font End Developer</h5>
+                    <h6>Google LLC / 2018 - Present</h6>
+                    <p>Leading a team of developers to build scalable web applications using modern technologies.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Web Developer Portfolio. All rights reserved.</p>
+
     </footer>
 </body>
 
